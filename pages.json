@@ -25,6 +25,13 @@
         "navigationBarTitleText": "商品详情",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/user/online-service/online-service",
+      "style": {
+        "navigationBarTitleText": "在线客服",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
