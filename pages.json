@@ -8,6 +8,12 @@
       }
     },
     {
+      "path": "pages/welfare/index",
+      "style": {
+        "navigationBarTitleText": "福利"
+      }
+    },
+    {
       "path": "pages/user/index",
       "style": {
         "navigationBarTitleText": "我的"
@@ -18,7 +24,12 @@
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "快回收",
     "navigationBarBackgroundColor": "#ffc903",
-    "backgroundColor": "#ffc903"
+    "backgroundColor": "#ffc903",
+    "app-plus": {
+      "titleNView": {
+        "type": "transparent"
+      }
+    }
   },
   "tabBar": {
     "color": "#8a8a8a",
@@ -29,6 +40,12 @@
         "pagePath": "pages/index/index",
         "iconPath": "static/icon/home.png",
         "selectedIconPath": "static/icon/home-active.png"
+      },
+      {
+        "iconPath": "static/icon/welfare.png",
+        "pagePath": "pages/welfare/index",
+        "selectedIconPath": "static/icon/welfare-active.png",
+        "text": "福利"
       },
       {
         "iconPath": "static/icon/my.png",

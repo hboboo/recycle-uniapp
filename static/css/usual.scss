@@ -7,6 +7,10 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
+.flex-start {
+  @extend .flex;
+  align-items: flex-start;
+}
 
 .flex-center {
   @extend .flex;
@@ -15,4 +19,22 @@
 .flex-center-between {
   @extend .flex-center;
   justify-content: space-between;
+}
+.flex-center-center {
+  @extend .flex-center;
+  justify-content: center;
+}
+.flex-center-between {
+  @extend .flex-center;
+  justify-content: space-between;
+}
+.flex-start-between {
+  @extend .flex-start;
+  justify-content: space-between;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
