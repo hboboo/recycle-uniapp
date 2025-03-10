@@ -32,6 +32,12 @@
         "navigationBarTitleText": "在线客服",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/order/index",
+      "style": {
+        "navigationBarTitleText": "填写回收信息"
+      }
     }
   ],
   "globalStyle": {
