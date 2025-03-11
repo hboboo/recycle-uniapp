@@ -139,6 +139,12 @@ const otherServiceList = reactive([
     icon: "../../static/icon/setting.png",
   },
 ]);
+
+const linkOrder = (status) => {
+  uni.navigateTo({
+    url: `/pages/order/list?order_status=${status}`,
+  });
+};
 </script>
 
 <style lang="scss" scoped>
