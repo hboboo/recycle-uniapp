@@ -16,11 +16,13 @@
         <view class="beans"> 回收豆可抵扣5.5元 </view>
       </view>
       <view class="title"> 超级大大电饭煲家用电饭煲多功能节能 </view>
+
       <view class="inventory flex-center-between">
         <text>包邮</text>
         <text>3天内发货</text>
         <text>库存：20</text>
       </view>
+      <uv-divider text="分割线" :dot="true"></uv-divider>
       <view class="detail">
         <view class="detail-tit"> 商品说明 </view>
         <view class="detail-desc">

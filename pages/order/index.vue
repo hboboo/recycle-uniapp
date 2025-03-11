@@ -150,12 +150,44 @@
       </view>
       <!-- 提交 -->
       <view class="submit flex-center-center" @click="submit">确认预约</view>
+
+      <!-- 回收服务城市 -->
+      <service-city v-model="showServiceCity"></service-city>
+      <!-- 新增地址 -->
+      <add-address v-model="showAddAddress" :showClose="false" @confirm="confirmAddress"></add-address>
+      <!-- 预约日期 -->
+      <dui-appoint-date v-model="showAppointDate" @confirm="confirmAppointDate"></dui-appoint-date>
+      <!-- 预约须知 -->
+      <appoint-notice v-model="showAppointNotice"></appoint-notice>
+      <dui-toast ref="toast"></dui-toast>
     </view>
   </view>
 </template>
 
 <script setup>
 import { reactive, computed, ref } from "vue";
+import { onLoad } from "@dcloudio/uni-app";
+
+// 弹窗相关
+const showServiceCity = ref(false);
+const showAddAddress = ref(false);
+const showAppointNotice = ref(false);
+const toast = ref(null);
+
+const showAppointDate = ref(false);
+const confirmAppointDate = (e) => {
+  const { date, time_period } = e;
+  form.time = `${date} ${time_period}`;
+};
+
+const fillAddress = () => {
+  showAddAddress.value = true;
+};
+const confirmAddress = (e) => {
+  const { name, phone, area, address_detail } = e;
+  form.address = `${name} ${phone} ${area} ${address_detail}`;
+};
+
 const form = reactive({
   type: "clothes", //回收类型
   address: "", //地址
@@ -336,6 +368,48 @@ const commentList = ref([
     comment: "上门服务太赞了，省时省力，必须五星好评！",
   },
 ]);
+
+// 联系客服
+const linkService = () => {
+  uni.navigateTo({
+    url: `/pages/user/online-service/online-service`,
+  });
+};
+
+const submit = () => {
+  form.weight = weightList.value[weightActivedIndex.value]?.id;
+  form.reward = rewardList.value[rewardActivedIndex.value]?.id;
+  if (!form.address) {
+    toast.value.showToast("请填写地址！");
+    return;
+  }
+  if (!form.time) {
+    toast.value.showToast("请选择预约上门时间！");
+    return;
+  }
+  if (!form.weight) {
+    let message = "";
+    if (form.type == "phone") {
+      message = "请选择手机品牌！";
+    } else if (form.type == "home-appliances") {
+      message = "请选择家电类型！";
+    } else {
+      message = "请选择预估重量！";
+    }
+    toast.value.showToast(message);
+    return;
+  }
+  if (!form.reward) {
+    toast.value.showToast("请选择奖励！");
+    return;
+  }
+  //请求服务端接口
+  toast.value.showToast("模拟提交成功！");
+};
+
+onLoad((e) => {
+  form.type = e.type;
+});
 </script>
 
 <style lang="scss" scoped>
