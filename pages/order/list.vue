@@ -50,6 +50,7 @@
 
 <script setup>
 import { ref } from "vue";
+import { onLoad } from "@dcloudio/uni-app";
 import { switchRecycleTypeName } from "@/utils/switch.js";
 
 // 顶部订单状态列表
@@ -195,6 +196,10 @@ const evaluate = (id) => {
     url: `/pages/order/evaluate?order_id=${id}`,
   });
 };
+
+onLoad((e) => {
+  orderStatusActiveInd.value = e.order_status;
+});
 </script>
 
 <style lang="scss" scoped>
