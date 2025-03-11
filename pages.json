@@ -38,6 +38,13 @@
       "style": {
         "navigationBarTitleText": "填写回收信息"
       }
+    },
+    {
+      "path": "pages/order/list",
+      "style": {
+        "navigationBarTitleText": "订单中心",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {

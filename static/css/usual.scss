@@ -27,13 +27,15 @@
   @extend .flex-center;
   justify-content: center;
 }
-.flex-center-between {
-  @extend .flex-center;
-  justify-content: space-between;
-}
+
 .flex-start-between {
   @extend .flex-start;
   justify-content: space-between;
+}
+.flex-center-end {
+  @extend .flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .text-overflow {
