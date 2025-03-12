@@ -51,6 +51,13 @@
       "style": {
         "navigationBarTitleText": "余额"
       }
+    },
+    {
+      "path": "pages/user/address/address",
+      "style": {
+        "navigationBarTitleText": "地址管理",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
