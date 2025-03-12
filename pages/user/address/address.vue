@@ -100,7 +100,7 @@ const addNewAddress = () => {
 };
 
 const confirmAddress = (e) => {
-  console.log(e);
+  addressList.value.push(e);
 };
 </script>
 
