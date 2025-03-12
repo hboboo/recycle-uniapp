@@ -65,6 +65,13 @@
         "navigationBarTitleText": "常见问题",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/user/suggestion-feedback/suggestion-feedback",
+      "style": {
+        "navigationBarTitleText": "建议反馈",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
