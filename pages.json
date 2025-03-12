@@ -72,6 +72,13 @@
         "navigationBarTitleText": "建议反馈",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/user/setting/setting",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
