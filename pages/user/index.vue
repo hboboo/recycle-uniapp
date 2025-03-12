@@ -145,6 +145,40 @@ const linkOrder = (status) => {
     url: `/pages/order/list?order_status=${status}`,
   });
 };
+
+const linkOther = (type) => {
+  let url = "";
+  switch (type) {
+    case "withdraw-cash":
+      url = `/pages/user/balance/balance`;
+      break;
+    case "exchange":
+      exchangePop.value = true;
+      break;
+    case "address-manage":
+      url = "/pages/user/address/address";
+      break;
+    case "common-question":
+      url = "/pages/user/common-question/common-question";
+      break;
+    case "online-service":
+      url = "/pages/user/online-service/online-service";
+      break;
+    case "suggestion-feedback":
+      url = "/pages/user/suggestion-feedback/suggestion-feedback";
+      break;
+    case "setting":
+      url = "/pages/user/setting/setting";
+      break;
+    default:
+      break;
+  }
+  if (url) {
+    uni.navigateTo({
+      url,
+    });
+  }
+};
 </script>
 
 <style lang="scss" scoped>

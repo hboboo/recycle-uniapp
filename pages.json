@@ -45,6 +45,12 @@
         "navigationBarTitleText": "订单中心",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/user/balance/balance",
+      "style": {
+        "navigationBarTitleText": "余额"
+      }
     }
   ],
   "globalStyle": {

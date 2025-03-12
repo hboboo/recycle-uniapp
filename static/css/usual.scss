@@ -37,6 +37,11 @@
   align-items: center;
   justify-content: flex-end;
 }
+.flex-end-between {
+  @extend .flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
 
 .text-overflow {
   white-space: nowrap;
