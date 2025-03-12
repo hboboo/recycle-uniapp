@@ -114,6 +114,13 @@
         "navigationBarTitleText": "订单详情",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/order/evaluate",
+      "style": {
+        "navigationBarTitleText": "评价",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
