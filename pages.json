@@ -58,6 +58,13 @@
         "navigationBarTitleText": "地址管理",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/user/common-question/common-question",
+      "style": {
+        "navigationBarTitleText": "常见问题",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
