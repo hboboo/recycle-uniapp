@@ -97,21 +97,21 @@ import { ref, reactive } from "vue";
 //轮播图
 const swiperList = [
   {
-    nickname: "从前有座山",
+    nickname: "风过无痕",
     avatar: "/static/icon/avatar.png",
     type: "clothes",
     type_name: "旧衣物",
     time: "2024-11-15 00:00",
   },
   {
-    nickname: "今天又是老八出局",
+    nickname: "云淡天高",
     avatar: "/static/icon/avatar.png",
     type: "books",
     type_name: "书籍",
     time: "2024-11-15 00:00",
   },
   {
-    nickname: "急急急急急急",
+    nickname: "夜雨微凉",
     avatar: "/static/icon/avatar.png",
     type: "clothes",
     type_name: "旧衣物",
@@ -241,7 +241,7 @@ const linkOrder = (item) => {
 const toast = ref(null);
 const activityClick = () => {
   toast.value.showToast({
-    content: "活动模块非核心功能，根据需求自定义补充！",
+    content: "欢迎体验活动模块，更多功能敬请期待！",
   });
 };
 </script>
