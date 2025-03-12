@@ -68,11 +68,19 @@
         </view>
       </view>
     </view>
+
+    <!-- 弹窗 -->
+    <beans-exchange v-model="exchangePop"></beans-exchange>
+    <dui-toast ref="toast"></dui-toast>
   </view>
 </template>
 
 <script setup>
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
+
+//弹窗
+const toast = ref(null);
+const exchangePop = ref(false);
 
 // 订单状态列表
 const orderStatusList = reactive([
