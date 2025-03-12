@@ -79,6 +79,34 @@
         "navigationBarTitleText": "设置",
         "navigationBarBackgroundColor": "#fff"
       }
+    },
+    {
+      "path": "pages/user/setting/about-us/about-us",
+      "style": {
+        "navigationBarTitleText": "关于我们",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/user/setting/user-assignment/user-assignment",
+      "style": {
+        "navigationBarTitleText": "用户协议",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/user/setting/privacy-assignment/privacy-assignment",
+      "style": {
+        "navigationBarTitleText": "隐私政策",
+        "navigationBarBackgroundColor": "#fff"
+      }
+    },
+    {
+      "path": "pages/user/setting/recycle-assignment/recycle-assignment",
+      "style": {
+        "navigationBarTitleText": "回收协议",
+        "navigationBarBackgroundColor": "#fff"
+      }
     }
   ],
   "globalStyle": {
